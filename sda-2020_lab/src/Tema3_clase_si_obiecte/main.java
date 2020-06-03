@@ -7,6 +7,7 @@ public class main {
 		PaymentMethod pm = new PaymentMethod("card");
 		Customer customer = new Customer(address, pm);
 		Customer c1 = new Customer("Marina", "Coman ", 22);
+
 		System.out.println(c1.getCompleteName());
 		System.out.println(customer.getAdress().getFullAdress());
 		System.out.println(customer.getMethod().getType());

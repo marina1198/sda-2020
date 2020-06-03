@@ -71,16 +71,12 @@ public class IfElse {
 
 		case "Zona Rezidentiala":
 			return 30;
-
 		case "Oras":
 			return 50;
-
 		case "Drum express":
 			return 100;
-
 		case "Autostrada":
 			return 130;
-
 		default:
 			return 0;
 		}

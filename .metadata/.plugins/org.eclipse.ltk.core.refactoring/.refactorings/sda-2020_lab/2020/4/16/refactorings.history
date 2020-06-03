@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;Tema4_Paint.Shape.Draw()&apos; to &apos;draw&apos;&#x0D;&#x0A;- Original project: &apos;sda-2020_lab&apos;&#x0D;&#x0A;- Original element: &apos;Tema4_Paint.Shape.Draw()&apos;&#x0D;&#x0A;- Renamed element: &apos;Tema4_Paint.Shape.draw()&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;Draw&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;Tema4_Paint{Shape.java[Shape~Draw" name="draw" references="true" stamp="1586958230520" version="1.0"/>
+</session>

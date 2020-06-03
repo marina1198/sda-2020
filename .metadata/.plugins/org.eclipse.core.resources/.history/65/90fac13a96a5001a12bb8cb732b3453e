@@ -1,0 +1,46 @@
+package Tema7;
+
+public class studenti {
+	private String nume, prenume;
+	private double noteromana;
+	private double notematematica;
+
+	public studenti(String nume, String prenume, double noterom, double notemate) {
+		this.nume = nume;
+		this.prenume = prenume;
+		this.notematematica = notemate;
+		this.noteromana = noterom;
+
+	}
+
+	public void setNoterom(double noterom) {
+		this.noteromana = noterom;
+	}
+
+	public void setNotemate(double notemate) {
+		this.notematematica = notemate;
+	}
+
+	@Override
+	public String toString() {
+		return "Nume:" + nume + ", Prenume: " + prenume + ", noteromana:[" + noteromana + "] ,notemate:[" + notematematica + "]";
+	}
+
+	public String getNume() {
+		return nume;
+	}
+
+	public String getPrenume() {
+		return prenume;
+	}
+
+	public double getNoterom() {
+		return noteromana;
+	}
+
+	public double getNotemate() {
+		return noteromana;
+
+	}
+
+}

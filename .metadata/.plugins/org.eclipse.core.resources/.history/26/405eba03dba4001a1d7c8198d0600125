@@ -1,0 +1,25 @@
+package Tema6_Matrici;
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		Scanner console1 = new Scanner(System.in);
+		System.out.println("n= ");
+		int n = console1.nextInt();
+
+		Scanner console2 = new Scanner(System.in);
+		System.out.println("m= ");
+		int m = console2.nextInt();
+
+		matrici img = new matrici();
+		img.GenerateOriginalImage(n, m);
+		// img.addZeroBorderToImage();
+		img.ProcessImage();
+		System.out.println();
+		img.PrintFilteredImage(n, m);
+
+	}
+
+}

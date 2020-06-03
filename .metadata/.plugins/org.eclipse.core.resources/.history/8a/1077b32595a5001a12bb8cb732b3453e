@@ -1,0 +1,60 @@
+package Tema7;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
+public class main {
+	
+	public static void main(String[] args) {
+		double[] notemate;
+		notemate = new double[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		double[] noterom = new double[] { 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 };
+		// Create a HashMap object called catalog
+		studenti elev1 = new studenti("Botezatu", "Andrei", noterom[0], notemate[9]);
+		studenti elev2 = new studenti("Popescu", "Andrei", noterom[1], notemate[8]);
+		studenti elev3 = new studenti("Gheorghe", "Andrei", noterom[2], notemate[7]);
+		studenti elev4 = new studenti("Petrescu", "Andrei", noterom[3], notemate[6]);
+		studenti elev5 = new studenti("Vasile", "Andrei", noterom[4], notemate[5]);
+		studenti elev6 = new studenti("Vlad", "Andrei", noterom[5], notemate[4]);
+		studenti elev7 = new studenti("Radu", "Andrei", noterom[6], notemate[3]);
+		studenti elev8 = new studenti("Liviu", "Andrei", noterom[7], notemate[2]);
+		studenti elev9 = new studenti("Sebi", "Andrei", noterom[8], notemate[1]);
+		studenti elev10 = new studenti("Andrei", "Andrei", noterom[9], notemate[0]);
+
+		HashMap<String, studenti> catalog = new HashMap<String, studenti>();
+
+		// Add keys and values (CNP,Name)
+		catalog.put("1a", elev1);
+		catalog.put("2b", elev2);
+		catalog.put("3c", elev3);
+		catalog.put("4d", elev4);
+		catalog.put("5a", elev5);
+		catalog.put("6a", elev6);
+		catalog.put("7c", elev7);
+		catalog.put("8f", elev8);
+		catalog.put("9z", elev9);
+		catalog.put("15", elev10);
+		// System.out.println(catalog);
+		System.out.println(catalog.get("15"));
+		// for(String getkey:catalog.keySet())
+		// {
+		// System.out.println(getkey);
+		// }
+		System.out.println("\n" + "LinkedHashMap!!!!!!!!!!!!!!!!!!" + "\n");
+
+		LinkedHashMap<String, studenti> catalog1 = new LinkedHashMap<String, studenti>();
+		catalog1.put("19f", elev1);
+		catalog1.put("1fjsdg", elev2);
+		catalog1.put("4ff", elev3);
+		catalog1.put("9z", elev4);
+		catalog1.put("adf", elev5);
+		catalog1.put("555", elev6);
+		catalog1.put("5547h", elev7);
+		catalog1.put("88", elev8);
+		catalog1.put("098", elev9);
+		catalog1.put("abcd", elev10);
+	
+		System.out.println(catalog1.get("9z"));
+	}
+
+}
